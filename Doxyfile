@@ -296,8 +296,8 @@ ALIASES                =
 # instance, some of the names that are used will be different. The list of all
 # members will be omitted, etc.
 # The default value is: NO.
-
-OPTIMIZE_OUTPUT_FOR_C  = NO
+# Simon modified here
+OPTIMIZE_OUTPUT_FOR_C  = YES
 
 # Set the OPTIMIZE_OUTPUT_JAVA tag to YES if your project consists of Java or
 # Python sources only. Doxygen will then generate output that is more tailored
@@ -1060,8 +1060,8 @@ FILE_PATTERNS          = *.c \
 # The RECURSIVE tag can be used to specify whether or not subdirectories should
 # be searched for input files as well.
 # The default value is: NO.
-
-RECURSIVE              = NO
+# Simon modified here
+RECURSIVE              = YES
 
 # The EXCLUDE tag can be used to specify files and/or directories that should be
 # excluded from the INPUT source files. This way you can easily exclude a
@@ -1085,8 +1085,9 @@ EXCLUDE_SYMLINKS       = NO
 #
 # Note that the wildcards are matched against the file with absolute path, so to
 # exclude all test directories for example use the pattern */test/*
-
-EXCLUDE_PATTERNS       =
+# Simon modified here
+EXCLUDE_PATTERNS       = */graphviz-2.38/*    \
+                         */html/*
 
 # The EXCLUDE_SYMBOLS tag can be used to specify one or more symbol names
 # (namespaces, classes, functions, etc.) that should be excluded from the
@@ -1771,8 +1772,8 @@ DISABLE_INDEX          = NO
 # consider setting DISABLE_INDEX to YES when enabling this option.
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
-
-GENERATE_TREEVIEW      = NO
+# Simon modified here
+GENERATE_TREEVIEW      = YES
 
 # When both GENERATE_TREEVIEW and DISABLE_INDEX are set to YES, then the
 # FULL_SIDEBAR option determines if the side bar is limited to only the treeview
@@ -2017,8 +2018,8 @@ EXTRA_SEARCH_MAPPINGS  =
 
 # If the GENERATE_LATEX tag is set to YES, Doxygen will generate LaTeX output.
 # The default value is: YES.
-
-GENERATE_LATEX         = YES
+# Simon modified here
+GENERATE_LATEX         = NO
 
 # The LATEX_OUTPUT tag is used to specify where the LaTeX docs will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
@@ -2571,8 +2572,8 @@ HIDE_UNDOC_RELATIONS   = YES
 # Bell Labs. The other options in this section have no effect if this option is
 # set to NO
 # The default value is: NO.
-
-HAVE_DOT               = NO
+# Simon modified here
+HAVE_DOT               = YES
 
 # The DOT_NUM_THREADS specifies the number of dot invocations Doxygen is allowed
 # to run in parallel. When set to 0 Doxygen will base this on the number of
@@ -2814,8 +2815,8 @@ INTERACTIVE_SVG        = NO
 # The DOT_PATH tag can be used to specify the path where the dot tool can be
 # found. If left blank, it is assumed the dot tool can be found in the path.
 # This tag requires that the tag HAVE_DOT is set to YES.
-
-DOT_PATH               =
+# Simon modified here
+DOT_PATH               = graphviz-2.38/release/bin
 
 # The DOTFILE_DIRS tag can be used to specify one or more directories that
 # contain dot files that are included in the documentation (see the \dotfile
